@@ -1,5 +1,8 @@
 # Krishna Kumar Maurya — Portfolio
 
+**Live:** <https://krishna3103-9.github.io/portfolio/>  
+**Repository:** <https://github.com/Krishna3103-9/portfolio>
+
 A static portfolio site for a UI/UX & Product Design Intern role: hand-written HTML, CSS and
 vanilla JavaScript. No build step, no framework, no dependencies — open `index.html` and it runs.
 
