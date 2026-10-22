@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; }
+  body { width:1200px; height:630px; overflow:hidden;
+         font-family:"Inter",sans-serif; background:#F2EFE8; color:#14130F; position:relative; }
+
+  .grain { position:absolute; inset:0; opacity:.05; pointer-events:none;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3'/%3E%3C/filter%3E%3Crect width='160' height='160' filter='url(%23n)' opacity='.55'/%3E%3C/svg%3E"); }
+
+  .band { position:absolute; left:0; top:0; bottom:0; width:14px;
+    background:linear-gradient(180deg,#1E2BE0 0 46%,#C8F06A 46% 60%,#1E2BE0 60%); }
+
+  .wrap { position:absolute; inset:0; padding:58px 64px 0 86px; display:flex; flex-direction:column; }
+
+  .top { display:flex; align-items:center; justify-content:space-between; }
+  .mark { width:46px; height:46px; border-radius:13px; background:#1E2BE0; color:#F2EFE8;
+    display:grid; place-items:center; font-family:"Sora",sans-serif; font-weight:700; font-size:24px; letter-spacing:-.03em; }
+  .tag { font-family:"JetBrains Mono",monospace; font-size:14px; letter-spacing:.2em; color:#716C61; text-transform:uppercase; }
+
+  .main { margin-top:auto; margin-bottom:auto; padding:34px 0 26px; max-width:790px; }
+  .kicker { font-family:"JetBrains Mono",monospace; font-size:13.5px; letter-spacing:.16em;
+    color:#1E2BE0; text-transform:uppercase; margin-bottom:20px; }
+  h1 { font-family:"Sora",sans-serif; font-weight:700; font-size:78px; line-height:1.0;
+    letter-spacing:-.042em; margin-bottom:18px; }
+  h1 .thin { display:block; font-weight:400; color:#4A473F; }
+  .lede { font-family:"Instrument Serif",Georgia,serif; font-style:italic; font-size:38px; line-height:1.15;
+    color:#14130F; margin-bottom:22px; }
+  .rule { width:72px; height:3px; background:#C8F06A; margin-bottom:22px; }
+  .sub { font-size:19px; line-height:1.5; color:#4A473F; max-width:640px; }
+
+  .foot { display:flex; align-items:center; gap:26px; padding:22px 0 30px;
+    border-top:1px solid rgba(20,19,15,.16); font-family:"JetBrains Mono",monospace; font-size:14px; color:#4A473F; }
+  .foot .sep { width:4px; height:4px; border-radius:50%; background:rgba(20,19,15,.35); }
+  .foot .blue { color:#1E2BE0; }
+
+  .art { position:absolute; right:-60px; top:150px; width:360px; height:360px; border-radius:28px;
+    background:#1E2BE0; overflow:hidden; }
+  .art svg { width:100%; height:100%; display:block; }
+  .art .cap { position:absolute; left:26px; bottom:24px; color:#F2EFE8;
+    font-family:"JetBrains Mono",monospace; font-size:12px; letter-spacing:.14em; }
+</style>
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="band"></div>
+  <div class="wrap">
+    <div class="top">
+      <div class="mark">K</div>
+      <div class="tag">Portfolio · 2026</div>
+    </div>
+
+    <div class="main">
+      <p class="kicker">UI/UX &amp; Product Design Intern · Gen-AI Workflows</p>
+      <h1>Krishna Kumar<span class="thin">Maurya</span></h1>
+      <p class="lede">I make complex systems feel obvious.</p>
+      <div class="rule"></div>
+      <p class="sub">Final-year CSE (AI/ML) student building user-facing products end to end — user flows, dashboards and working interfaces in React/Next.js.</p>
+    </div>
+
+    <div class="foot">
+      <span class="blue">mauryakrishayu@gmail.com</span>
+      <span class="sep"></span>
+      <span>github.com/Krishna3103-9</span>
+      <span class="sep"></span>
+      <span>Dehradun, India → Hyderabad</span>
+    </div>
+  </div>
+
+  <div class="art">
+    <svg viewBox="0 0 360 360" fill="none">
+      <g stroke="rgba(242,239,232,.16)" stroke-width="1">
+        <path d="M0 90H360M0 180H360M0 270H360M90 0V360M180 0V360M270 0V360"/>
+      </g>
+      <path d="M40 296C104 296 106 214 176 202S268 156 318 74" stroke="#F2EFE8" stroke-width="2"
+            stroke-dasharray="2 9" stroke-linecap="round" fill="none"/>
+      <circle cx="40" cy="296" r="7" fill="#F2EFE8"/>
+      <circle cx="318" cy="74" r="7" fill="#C8F06A"/>
+      <g>
+        <circle cx="176" cy="202" r="24" fill="none" stroke="rgba(242,239,232,.38)"/>
+        <circle cx="176" cy="202" r="10" fill="#F2EFE8"/>
+        <circle cx="176" cy="202" r="17" fill="none" stroke="#C8F06A" stroke-opacity=".7"/>
+      </g>
+      <g transform="translate(22 234)">
+        <rect width="212" height="70" rx="11" fill="#F2EFE8"/>
+        <text x="16" y="26" font-family="JetBrains Mono, monospace" font-size="10" letter-spacing="1.4" fill="#1E2BE0">WHY THIS NEXT</text>
+        <text x="16" y="46" font-family="Inter, sans-serif" font-size="13" fill="#14130F">Builds on your React work</text>
+        <text x="16" y="61" font-family="JetBrains Mono, monospace" font-size="9" fill="#716C61">CONFIDENCE 0.86 · EDITABLE</text>
+      </g>
+    </svg>
+    <span class="cap">PROFILE → PATH → REASON</span>
+  </div>
+</body>
+</html>
